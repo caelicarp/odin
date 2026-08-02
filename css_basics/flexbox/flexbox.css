@@ -1,0 +1,32 @@
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+div {
+  padding: 20px;
+}
+
+.flex-parent {
+  background-color: lightgray;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 400px;
+}
+
+.flex-child {
+  background-color: lightslategray;
+
+  &:nth-child(1) {
+    align-self: end;
+  }
+
+  &:nth-child(3) {
+    background-color: crimson;
+    height: 60px;
+  }
+}
