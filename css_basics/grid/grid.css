@@ -1,0 +1,44 @@
+body {
+  background-color: #111;
+}
+
+div {
+  padding: 20px;
+}
+
+.grid-parent {
+  background-color: lightgray;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+    "child1 child1 child1 child1"
+    "child1 child1 child1 child1"
+    "child2 child4 child4 child4"
+    "child3 child4 child4 child4";
+}
+
+.grid-child {
+  background-color: crimson;
+
+  &:nth-child(1) {
+    background-color: plum;
+    grid-area: child1;
+  }
+
+    &:nth-child(2) {
+    background-color: deepskyblue;
+    grid-area: child2;
+  }
+
+    &:nth-child(3) {
+    background-color: yellow;
+    grid-area: child3;
+  }
+
+    &:nth-child(4) {
+    background-color: plum;
+    grid-area: child4;
+  }
+}

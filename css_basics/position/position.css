@@ -1,0 +1,16 @@
+body {
+  background-color: #111111;
+  color: white;
+}
+
+.block {
+  position: absolute;
+  /* width: 200px; */
+  /* height: 100px; */
+  background-color: crimson;
+  top: 40px;
+  right: 40px;
+  bottom: 40px;
+  left: 40px;
+  /* inset: 40px 40px 40px 40px; */
+}
